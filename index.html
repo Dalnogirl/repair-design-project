@@ -14,22 +14,24 @@
     <header>
         <nav class="header-nav">
             <div class="nav-logo">IC "REPAIR DESIGN PROJECT"</div>
-            <div class="nav-item">HOME</div>
-            <div class="nav-item">PROJECTS</div>
-            <div class="nav-item">MEASUREMENT</div>
-            <div class="nav-item">TEAM</div>
-            <div class="nav-item">REVIEWS</div>
-            <div class="nav-item">CONTACTS</div>
+            <div class="nav-item-wrapper">
+                <div class="nav-item">HOME</div>
+                <div class="nav-item">PROJECTS</div>
+                <div class="nav-item">MEASUREMENT</div>
+                <div class="nav-item">TEAM</div>
+                <div class="nav-item">REVIEWS</div>
+                <div class="nav-item">CONTACTS</div>
+            </div>
             <div class="nav-item">
                 <a href="#" class="nav-phone">+7 (928) 768-32-39</a>
             </div>
             <div class="nav-item">
-                <button>REQUEST A CALL</button>
+                <button class="button">REQUEST A CALL</button>
             </div>
         </nav>
 
         <main>
-            <aside>
+            <aside class="vertical-text">
                 <p class="aside-vertical-text">INSTAGRAM</p>
             </aside>
             <div class="main-text">
@@ -72,30 +74,32 @@
         <main class="completed-projects-main">
             <div class="text-area">
                 <div class="information-text">
-                    <p class="promo-text">
-                        Completed <br>
-                        projects _____________
-                    </p>
-                    <p class="intro-text">
-                        Only a small part of the work performed by our company is <br>
-                        presented on the site. For 14 years on in the construction<br>
-                        market we have made happy more than 1000 families
-                    </p>
+                    <div class="top-text">
+                        <p class="promo-text">
+                            Completed <br>
+                            projects
+                        </p>
+                        <p class="intro-text">
+                            Only a small part of the work performed by our company is <br>
+                            presented on the site. For 14 years on in the construction<br>
+                            market we have made happy more than 1000 families
+                        </p>
+                    </div>
                     <div class="information-text-short-info">
-                        <div>
+                        <div class="information-text-cell">
                             <p class="head">CITY:</p>
                             <p>Rostov-on-Don <br>
                                 LCD admiral</p>
                         </div>
-                        <div>
+                        <div class="information-text-cell">
                             <p class="head">APARTMENT AREA:</p>
                             <p>81 m2</p>
                         </div>
-                        <div>
+                        <div class="information-text-cell">
                             <p class="head">REPAIR TIME:</p>
                             <p>3.5 months</p>
                         </div>
-                        <div>
+                        <div class="information-text-cell">
                             <p class="head">REPAIR COST:</p>
                             <p>Upon request</p>
                         </div>
@@ -107,8 +111,31 @@
             </div>
 
             <div class="slider">
-                <img src="/img/slider-first-img.png" alt="">
-                <img src="/img/slider-second-img.png" alt="">
+                <img src="/img/control-left.svg" alt="" class="control-left">
+                <img src="/img/slider-first-img.png" alt="" class="main-slider-img">
+                <img src="/img/slider-second-img.png" alt="" class="second-slider-img">
+                <img src="/img/control-right.svg" alt="" class="control-right">
+            </div>
+            <div class="a">
+                <div class="information-text-short-info-mobile">
+                    <div class="information-text-cell">
+                        <p class="head">CITY:</p>
+                        <p>Rostov-on-Don <br>
+                            LCD admiral</p>
+                    </div>
+                    <div class="information-text-cell">
+                        <p class="head">APARTMENT AREA:</p>
+                        <p>81 m2</p>
+                    </div>
+                    <div class="information-text-cell">
+                        <p class="head">REPAIR TIME:</p>
+                        <p>3.5 months</p>
+                    </div>
+                    <div class="information-text-cell">
+                        <p class="head">REPAIR COST:</p>
+                        <p>Upon request</p>
+                    </div>
+                </div>
             </div>
         </main>
     </section>
@@ -120,9 +147,11 @@
                     ONLINE CONTROL
                 </p>
                 <img src="/img/online-control.svg" alt="">
+                <div class="online-control-video">
+                    <video src="#" poster="/img/white-vid.png"></video>
+                </div>
             </div>
 
-            <img src="/img/white-vid.png" alt="" class="white-video">
             <div class="wrapper-col">
                 <img src="/img/stick.svg" alt="" class="stick">
             </div>
@@ -133,11 +162,17 @@
                 Leave a request below and you will receive a link to the broadcast.
             </p>
             <form action="" class="form">
-                <input type="text">
-                <input type="text">
+                <div class="input-wrapper">
+                    <p>Name</p>
+                    <input type="text" placeholder="What is your name">
+                </div>
+                <div class="input-wrapper">
+                    <p>Phone</p>
+                    <input type="text" placeholder="Your phone number">
+                </div>
                 <button class="submit">SUBMIT</button>
             </form>
-            <div class="wrapper">
+            <div class="wrapper-checkbox">
                 <input type="checkbox" name="" id="">
                 <p>I agree to the processing of personal data</p>
             </div>
@@ -149,63 +184,69 @@
                 <p class="head-text">
                     TYPES OF REPAIR
                 </p>
-                <img src="/img/types-of-repair.svg" alt="">
+                <img src="/img/types-of-repair.svg" alt="" class="icon">
             </div>
 
             <div class="wrapper-cards">
                 <div class="card">
                     <img src="/img/first-card.png" alt="">
                     <div class="card-text">
-                        <p>Redecorating</p>
-                        <ul>
-                            <li>• Dismantling of old coatings</li>
-                            <li>• Wallpapering</li>
-                            <li>• Painting walls and ceilings</li>
-                            <li>• Laying flooring</li>
-                            <li>• Replacing plumbing</li>
-                            <li>• Replacing sockets and switches</li>
-                            <li>• Replacing doors</li>
-                        </ul>
-                        <button class="button">
-                            from 900 rub / m2
-                        </button>
+                        <div class="card-text-body">
+                            <p class="card-head-text">Redecorating</p>
+                            <ul>
+                                <li>• Dismantling of old coatings</li>
+                                <li>• Wallpapering</li>
+                                <li>• Painting walls and ceilings</li>
+                                <li>• Laying flooring</li>
+                                <li>• Replacing plumbing</li>
+                                <li>• Replacing sockets and switches</li>
+                                <li>• Replacing doors</li>
+                            </ul>
+                            <button class="button">
+                                from 900 rub / m2
+                            </button>
+                        </div>
                     </div>
 
                 </div>
                 <div class="card">
                     <img src="/img/sec-card.png" alt="">
                     <div class="card-text">
-                        <p>Overhaul</p>
-                        <ul>
-                            <li>• Dismantling of old coatings</li>
-                            <li>• Wallpapering</li>
-                            <li>• Painting walls and ceilings</li>
-                            <li>• Laying flooring</li>
-                            <li>• Replacing plumbing</li>
-                            <li>• Replacing sockets and switches</li>
-                            <li>• Replacing doors</li>
-                        </ul>
-                        <button class="button">
-                            from 1800 rub / m2
-                        </button>
+                        <div class="card-text-body">
+                            <p class="card-head-text">Overhaul</p>
+                            <ul>
+                                <li>• Dismantling of old coatings</li>
+                                <li>• Wallpapering</li>
+                                <li>• Painting walls and ceilings</li>
+                                <li>• Laying flooring</li>
+                                <li>• Replacing plumbing</li>
+                                <li>• Replacing sockets and switches</li>
+                                <li>• Replacing doors</li>
+                            </ul>
+                            <button class="button">
+                                from 1800 rub / m2
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <img src="/img/thrd-card.png" alt="">
                     <div class="card-text">
-                        <p>Designer Repair</p>
-                        <ul>
-                            <li>• Dismantling of old coatings</li>
-                            <li>• Wallpapering</li>
-                            <li>• Painting walls and ceilings</li>
-                            <li>• Laying flooring</li>
-                            <li>• Replacing plumbing</li>
-                            <li>• Replacing sockets and switches</li>
-                            <li>• Replacing doors</li>
-                        </ul>
-                        <button class="button">
-                            from 4000 rub / m2
-                        </button>
+                        <div class="card-text-body">
+                            <p class="card-head-text">Designer Repair</p>
+                            <ul>
+                                <li>• Dismantling of old coatings</li>
+                                <li>• Wallpapering</li>
+                                <li>• Painting walls and ceilings</li>
+                                <li>• Laying flooring</li>
+                                <li>• Replacing plumbing</li>
+                                <li>• Replacing sockets and switches</li>
+                                <li>• Replacing doors</li>
+                            </ul>
+                            <button class="button">
+                                from 4000 rub / m2
+                            </button>
+                        </div>
                     </div>
 
                 </div>
@@ -216,11 +257,13 @@
             <img src="/img/home-form.png" alt="">
             <div class="wrapper-col">
                 <form action="" class="request-form">
-                    <p>
+
+
+                    <p class="centered">
                         Leave a request for free <br>
                         departure of the measurer
                     </p>
-                    <div class="wrapper-col">
+                    <div class="form-body">
                         <p>Name</p>
                         <input type="text" placeholder="What is your name:" class="request-form-input">
                         <p>Phone</p>
@@ -232,6 +275,7 @@
                             <span>I agree to the processing of personal data</span>
                         </div>
                     </div>
+
                     <button class="button">
                         CALL
                     </button>
@@ -243,12 +287,12 @@
 
     <section class="fantasies">
         <div class="wrapper-fantasies">
-            <div class="wrapper-col">
+            <div class="wrapper-fantasies-list">
                 <p class="head-text">
                     WE REALIZE YOUR<br>
                     WILDEST FANTASIES
                 </p>
-                <ul>
+                <ul class="fantasies-list">
                     <li>American classic</li>
                     <li>Empire</li>
                     <li>Classical</li>
@@ -268,10 +312,15 @@
                     <img src="/img/fantasy-sec-img.png" alt="" class="second">
                 </div>
                 <div class="wrapper-col">
-                    <img src="/img/fantasy-thrd-img.png" alt="">
-                    <img src="/img/fantasy-fourth-img.png" alt="">
+                    <img src="/img/fantasy-thrd-img.png" alt="" class="third">
+                    <img src="/img/fantasy-fourth-img.png" alt="" class="fourth">
                 </div>
             </div>
+        </div>
+        <div class="slider">
+            <img src="/img/control-left.svg" alt="" class="control-left">
+            <img src="/img/slider-2-bg.png" alt="" class="slider-item">
+            <img src="/img/control-right.svg" alt="" class="control-right">
         </div>
     </section>
 
@@ -289,61 +338,64 @@
         <div class="wrapper-cards">
             <div class="card">
                 <img src="/img/first-card.png" alt="">
-                <div class="card-text">
-                    <p>Redecorating</p>
-                    <ul>
-                        <li>• Dismantling of old coatings</li>
-                        <li>• Wallpapering</li>
-                        <li>• Painting walls and ceilings</li>
-                        <li>• Laying flooring</li>
-                        <li>• Replacing plumbing</li>
-                        <li>• Replacing sockets and switches</li>
-                        <li>• Replacing doors</li>
-                    </ul>
-                    <button class="button">
-                        from 900 rub / m2
-                    </button>
+                <div class="card-text-one card-text">
+                    <div class="card-text-body">
+                        <p class="card-head-text">Mini</p>
+                        <ul>
+                            <li>• Measurement drawing</li>
+                            <li>• Redevelopment</li>
+                            <li>• Layout of furniture</li>
+                            <li>• Plumbing plan. equipment</li>
+                        </ul>
+                        <button class="button">
+                            from 900 rub / m2
+                        </button>
+                    </div>
                 </div>
 
             </div>
             <div class="card">
                 <img src="/img/sec-2-card-2.png" alt="">
-                <div class="card-text">
-                    <p>Overhaul</p>
-                    <ul>
-                        <li>• Dismantling of old coatings</li>
-                        <li>• Wallpapering</li>
-                        <li>• Painting walls and ceilings</li>
-                        <li>• Laying flooring</li>
-                        <li>• Replacing plumbing</li>
-                        <li>• Replacing sockets and switches</li>
-                        <li>• Replacing doors</li>
-                    </ul>
-                    <button class="button">
-                        from 1800 rub / m2
-                    </button>
+                <div class="card-text-two card-text">
+                    <div class="card-text-body">
+                        <p class="card-head-text">Standard</p>
+                        <ul>
+                            <li>• Measurement drawing</li>
+                            <li>• Redevelopment</li>
+                            <li>• Layout of furniture</li>
+                            <li>• Plan of ceilings</li>
+                            <li>• Floor Plan</li>
+                            <li>• Electricians plan</li>
+                            <li>• Lighting plan</li>
+                        </ul>
+                        <button class="button">
+                            from 1800 rub / m2
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <img src="/img/sec-2-card-3.png" alt="">
-                <div class="card-text-sec-2-card-3">
-                    <p class="head-text">Full</p>
-                    <ul>
-                        <li>• Redevelopment</li>
-                        <li>• Layout of furniture</li>
-                        <li>• Plan of ceilings</li>
-                        <li>• Floor Plan</li>
-                        <li>• Electricians plan</li>
-                        <li>• Lighting plan</li>
-                        <li>• Wall reamers</li>
-                        <li>• 3D visualization</li>
-                        <li>• Bill of materials</li>
-                        <li>• Departure for a selection of materials</li>
-                        <li>• Departure for a selection of materials</li>
-                    </ul>
-                    <button class="button">
-                        from 4000 rub / m2
-                    </button>
+                <div class="card-text-three card-text">
+                    <div class="card-text-body">
+                        <p class="card-head-text">Full</p>
+                        <ul>
+                            <li>• Redevelopment</li>
+                            <li>• Layout of furniture</li>
+                            <li>• Plan of ceilings</li>
+                            <li>• Floor Plan</li>
+                            <li>• Electricians plan</li>
+                            <li>• Lighting plan</li>
+                            <li>• Wall reamers</li>
+                            <li>• 3D visualization</li>
+                            <li>• Bill of materials</li>
+                            <li>• Departure for a selection of materials</li>
+                            <li>• Furniture selection</li>
+                        </ul>
+                        <button class="button">
+                            from 4000 rub / m2
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -351,52 +403,54 @@
     </section>
 
     <section class="how-we-are-working">
-        <div class="wrapper">
-            <div class="wrapper-col">
-                <p>How we are working</p>
-                <p>
+        <div class="wrapper-hwaw">
+            <div class="left-part">
+                <p class="p-hwaw">How we are working</p>
+                <p class="six-steps">
                     6 steps to <br>
                     the goal
                 </p>
-                <p>1/6</p>
-                <p>Departure for <br>
+                <p class="one-six">1/6</p>
+                <p class="main-text-head">Departure for <br>
                     measurements premises
                 </p>
                 <p class="main-text">
-                    After your call, we go to you to consult and measure the premises of your apartment. During our
-                    meeting,
-                    you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
-                    He will advise you on the issues of repair technology, apartment design, terms of repair of the
-                    apartment as a whole and its individual stages.
+                    After your call, we go to you to consult and measure the <br> premises of your apartment. During our
+                    meeting, you can <br> ask absolutely any number of questions. An <br> appraiser-appraiser leaves to
+                    measure the room. <br> <br>
+                    He will advise you on the issues of repair technology, <br> apartment design, terms of repair of the
+                    apartment as a <br> whole and its individual stages.
                 </p>
                 <img src="/img/hwaw-ctrl.svg" alt="">
             </div>
-            <div class="wrapper-col">
+            <div class="wrapper-cells-img">
                 <div class="wrapper-cells">
                     <div class="cell">
-                        <p>01</p>
+                        <p class="cell-num">01</p>
                         <p>Departure to <br>
                             room measurements</p>
                     </div>
                     <div class="cell">
-                        <p>02</p>
-                        <p></p>
+                        <p class="cell-num">02</p>
+                        <p>Compilation <br>
+                            estimates</p>
                     </div>
                     <div class="cell">
-                        <p>03</p>
-                        <p></p>
+                        <p class="cell-num">03</p>
+                        <p>Development <br>
+                            project design</p>
                     </div>
                     <div class="cell">
-                        <p>04</p>
-                        <p></p>
+                        <p class="cell-num">04</p>
+                        <p>Purchasing Supplies</p>
                     </div>
                     <div class="cell">
-                        <p>05</p>
-                        <p></p>
+                        <p class="cell-num">05</p>
+                        <p>Repair finishing work</p>
                     </div>
                     <div class="cell">
-                        <p>06</p>
-                        <p></p>
+                        <p class="cell-num">06</p>
+                        <p>Приемка-сдача работ</p>
                     </div>
                 </div>
                 <img src="/img/hwaw-man.png" alt="">
@@ -407,77 +461,222 @@
 
     <section class="our-team">
         <div class="wrapper-col">
-            <p class="head-text"></p>
-            <img src="" alt="">
-            <div class="cards-wrapper">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+            <p class="head-text">
+                our team
+            </p>
+            <img src="/img/our-team.svg" alt="">
+            <p class="our-team-intro">
+                Our team has helped to become happier for more than <br>
+                500 families and we are not going to stop
+            </p>
+            <div class="wrapper-cards">
+                <div class="card-our-team">
+                    <img src="/img/dmitry-i.svg" alt="" class="icon-our-team">
+                    <img src="/img/dmitry.png" alt="" class="photo">
+                    <div class="card-our-team-text">
+                        <p class="name">Dmitry tulyakov</p>
+                        <p class="work">Project manager</p>
+                        <button>Work experience 8 years</button>
+                    </div>
+                </div>
+                <div class="card-our-team">
+                    <img src="/img/larisa-i.svg" alt="" class="icon-our-team">
+                    <img src="/img/larisa.png" alt="" class="photo">
+                    <div class="card-our-team-text">
+                        <p class="name">Larisa Kotlyarova</p>
+                        <p class="work">Designer</p>
+                        <button>Work experience 6 years</button>
+                    </div>
+                </div>
+                <div class="card-our-team">
+                    <img src="/img/alex-i.svg" alt="" class="icon-our-team">
+                    <img src="/img/alex.png" alt="" class="photo">
+                    <div class="card-our-team-text">
+                        <p class="name">Alexey Efimov</p>
+                        <p class="work">Foreman</p>
+                        <button>Work experience 12 years</button>
+                    </div>
+                </div>
             </div>
-            <img src="" alt="">
-            <p></p>
+            <img src="/img/stick.svg" alt="" class="stick">
+            <p class="our-team-text">
+                Each employee of our company is a qualified full-time specialist <br>
+                with work experience of 6 years. <br>
+                We do not have laborers and guest workers, each employee carries out <br> work corresponding to his
+                specialty.
+            </p>
         </div>
     </section>
+
+
+
 
     <section class="our-clients">
         <div class="wrapper-col">
-            <p class="head-text"></p>
-            <img src="" alt="">
-            <p></p>
+            <p class="head-text"> our clients</p>
+            <img src="/img/our-clients.svg" alt="">
+            <p class="intro-text">80% of our customers recommend us to their <br>
+                friends and family.</p>
         </div>
-        <div class="cards-wrapper">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+        <div class="wrapper-cards">
+
+            <div class="card-clients">
+                <div class="wrap">
+                    <img src="/img/maria.png" alt="">
+                    <p class="name">
+                        Fedosova Maria <br>
+                        Konstantinovna
+                    </p>
+                </div>
+                <p class="comment">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY
+                    grateful that I
+                    referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS
+                    PROFESSIONALISM AND APPROACH.
+                    THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL.
+                    WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND
+                    THESE MASTERS.</p>
+                <div class="card-footer">
+                    <div class="wrapper">
+                        <img src="/img/card-footer-1.svg" alt="">
+                        <p>40 m2</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/img/card-footer-2.svg" alt="">
+                        <p>48 DAYS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-clients">
+                <div class="wrap">
+                    <img src="/img/sergey.png" alt="">
+                    <p class="name">
+                        Afanasyev Sergey <br> Alexandrovich
+                    </p>
+                </div>
+                <p class="comment">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY
+                    grateful that I
+                    referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS
+                    PROFESSIONALISM AND APPROACH.
+                    THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL.
+                    WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND
+                    THESE MASTERS.
+                </p>
+                <div class="card-footer">
+                    <div class="wrapper">
+                        <img src="/img/card-footer-1.svg" alt="">
+                        <p>90 м2</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/img/card-footer-2.svg" alt="">
+                        <p>128 DAYS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-clients">
+                <div class="wrap">
+                    <img src="/img/egor.png" alt="">
+                    <p class="name">
+                        Kiriev Egor <br> Leonidovich
+                    </p>
+                </div>
+                <p class="comment">I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY
+                    grateful that I
+                    referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS
+                    PROFESSIONALISM AND APPROACH.
+                    THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL.
+                    WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND
+                    THESE MASTERS.</p>
+                <div class="card-footer">
+                    <div class="wrapper">
+                        <img src="/img/card-footer-1.svg" alt="">
+                        <p>56 м2</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="/img/card-footer-2.svg" alt="">
+                        <p>86 DAYS</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <form action="" class="questions">
-        <div class="wrapper-col">
-            <p class="head-text"></p>
-            <div class="wrapper">
-                <div class="wrapper-col">
-                    <p></p>
-                    <input type="text">
-                </div>
-                <div class="wrapper-col">
-                    <p></p>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="wrapper-col">
-                <p></p>
-                <input type="text">
-            </div>
-            <div class="checkbox-wrapper">
-                <input type="checkbox">
-                <p></p>
-            </div>
-            <button class="button"></button>
-        </div>
-    </form>
 
-    <div class="wrapper-col">
-        <p></p>
-        <div class="wrapper">
-            <img src="" alt=""><img src="" alt="">
-        </div>
-        <img src="" alt="">
+
+
+    <div class="wrapper">
+        <form action="" class="questions">
+            <div class="wrapper-col">
+                <p class="head-text">
+                    have any questions?
+                </p>
+                <div class="wrapper">
+                    <div class="input-wrapper">
+                        <p>Name</p>
+                        <input type="text" placeholder="What is your name">
+                    </div>
+                    <div class="input-wrapper">
+                        <p>Phone</p>
+                        <input type="text" placeholder="Your phone number">
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="input-wrapper ">
+                        <p>Question</p>
+                        <input class="question" type="text" placeholder="I want to know:">
+                    </div>
+                </div>
+                <div class="wrapper-checkbox">
+                    <input type="checkbox">
+                    <p>I agree to the processing of personal data</p>
+                </div>
+                <button class="button">
+                    Submit
+                </button>
+            </div>
+        </form>
     </div>
 
-    <footer>
-        <div class="wrapper">
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <button class="button"></button>
+
+
+
+
+    <section class="map">
+        <div class="wrapper-col">
+            <p class="head-text">
+                Rostov-on-Don, Nansen St., 239 Shopping Center <br>
+                Decorum Tel +7 (928) 768 32 29
+            </p>
+            <div class="icons">
+                <img src="/img/mail.svg" alt="">
+                <img src="/img/inst.svg" alt="">
+            </div>
+            <div class="wrapper">
+                <img src="/img/map.png" alt="">
+            </div>
         </div>
-    </footer>
+    </section>
+
+
+    <nav class="header-nav footer">
+        <div class="nav-logo">IC "REPAIR DESIGN PROJECT"</div>
+        <div class="nav-item-wrapper">
+            <div class="nav-item">HOME</div>
+            <div class="nav-item">PROJECTS</div>
+            <div class="nav-item">MEASUREMENT</div>
+            <div class="nav-item">TEAM</div>
+            <div class="nav-item">REVIEWS</div>
+            <div class="nav-item">CONTACTS</div>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-phone">+7 (928) 768-32-39</a>
+        </div>
+        <div class="nav-item">
+            <button>REQUEST A CALL</button>
+        </div>
+    </nav>
+
+
 
 
 
